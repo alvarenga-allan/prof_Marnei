@@ -40,17 +40,17 @@ body {
 
 .drop-content {
     display: none; /*esconde o conteúdo*/
-    position: absolute; 
+    position: absolute; /*absoluto referente ao navegador, ignorando as demais tags*/
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px #23232399;
-    z-index: 1;
+    z-index: 1;/*eixo de profundidade*/
 }
 
 .drop-content a {
     display: block;
     float: none;
-    padding: 12px 16px;
+    padding: 12px 16px; /*colocar um pouco menor por causa do deslocamento*/
     text-decoration: none;
     text-align: left;
     color: #232323;
