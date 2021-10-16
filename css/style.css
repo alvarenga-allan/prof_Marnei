@@ -1,0 +1,50 @@
+/* Comentários em CSS*/
+
+/* Eusando o elemento (tag) Body como seletor, o background- color como propriedade e a cor como valor*/
+
+body{
+    background-color: #95a5a6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Usando o Elemento (tag) H3 como seletor */
+h3{
+    color: #b10d6c;
+    text-align: center;
+}
+
+/* Usando o Elemento (tag) P como seletor */
+
+p{
+    color: blue;
+    
+
+}
+
+/* OBS: Podemos utilizar qualquer elemento HTML como SELETOR */
+
+
+
+/* Classes */
+
+/*Usando uma classe como seletor*/
+/* uma classe pode ser usada em varios lugares diferentes*/
+
+.citacao{
+font-family: 'Open Sans', sans-serif;
+font-style: italic;
+font-size: 12px;
+/*font-size: 0.75em;*/ 
+background-color: rgb(241, 239, 71);
+text-align: right;
+}
+
+/* IDS devem ser ÚNICOS */
+/*Usando um ID como seletor*/
+
+#p2{
+    font-size: 0.75em; /* 75% do tamanho padrão*/
+    font-family: 'Open Sans', sans-serif;
+font-style: italic;
+background-color: rgb(68, 43, 139);
+}
