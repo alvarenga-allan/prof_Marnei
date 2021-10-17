@@ -114,3 +114,66 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
+/* ===== Media Queries ===== */
+
+/* Extra small (xs): Smartphone (portrait - retrato) */
+@media (min-width: 400px) {
+    section {
+        width: 90%;
+        margin-top: 110px;
+        /*background-color: #9dfcdc;*/
+    }
+
+    img {
+        width: 96%;
+    }
+}
+
+/* Small (sm): Smartphone (landscape - paisagem) */
+@media (min-width: 576px) {
+    section {
+        width: 96%;
+        margin-top: 110px;
+        /*background-color: #ffd970;*/
+    }
+
+    img {
+        width: 35%;
+    }
+
+    .foto {
+        margin-right: 15px;
+    }
+}
+
+/* Medium (md): Tablet */
+@media (min-width: 768px) {
+    section {
+        width: 80%;
+        margin-top: 75px;
+        /*background-color: #ff70f3;*/
+    }
+
+    img {
+        width: 25%;
+    }
+}
+
+/* Large (lg): Notebook */
+@media (min-width: 992px) {
+    section {
+        /*background-color: #7085ff;*/
+    }
+
+    img {
+        width: 15%;
+    }
+}
+
+/* Extra Large (xl): Computador */
+@media (min-width: 1200px) {
+    section {
+        /*background-color: #f9f9f9;*/
+    }
+}
