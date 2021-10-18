@@ -1,9 +1,8 @@
-
 /* Limpa as formatações das tags (padrão) */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*estudar*/
+    box-sizing: border-box;
 }
 
 html {
@@ -58,7 +57,7 @@ form input {
     margin: auto;
     border-radius: 8px;
     border: none;
-    outline: none;/*linha quando ta selecionado*/
+    outline: none;
     padding: 10px;
     margin-bottom: 15px;
 }
@@ -116,6 +115,7 @@ form ::placeholder {
 }
 
 footer {
+    letter-spacing: 0.1rem;
     margin-top: 100px;
     min-height: 300px;
     background: linear-gradient(180deg, #1f4774, #232323);
@@ -123,11 +123,104 @@ footer {
 }
 
 footer div {
-    width: 20%;
+    width: 100%;
+    height: 200px;
     padding: 35px;
     color: #aaaaaa;
+    overflow: hidden;
 
-    /* overflow: hidden; */
+    /* border: #dce0e2 solid 1px; */
+}
 
-    border: #dce0e2 solid 1px;
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+/* ::::: Media Queries ::::: */
+
+/* Extra small (xs): Smartphone (portrait - retrato) */
+@media (min-width: 350px) and (max-width: 576px) {
+    /* .arco {
+        background-color: #8a2be2;
+    } */
+
+    .container, form {
+        width: 90%;
+    }
+
+    footer {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+}
+
+/* Small (sm): Smartphone (landscape - paisagem) */
+@media (min-width: 576px) {
+    /* .arco {
+        background-color: #fffb27;
+    } */
+
+    .container, form {
+        width: 80%;
+    }
+
+    footer {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+}
+
+/* Medium (md): Tablet */
+@media (min-width: 768px) {
+    /* .arco {
+        background-color: #24e2c3;
+    } */
+
+    .container {
+        width: 60%;
+    }
+
+    footer {
+        display: flex;
+    }
+}
+
+/* Large (lg): Notebook */
+@media (min-width: 992px) {
+    /* .arco {
+        background-color: #e2a624;
+    } */
+
+    .container {
+        width: 50%;
+    }
+
+    form {
+        width: 65%;
+    }
+
+    .hide {
+        display: block;
+    }
+}
+
+/* Extra Large (xl): Computador */
+@media (min-width: 1200px) {
+    /* .arco {
+        background-color: #706d67;
+    } */
+
+    .container, form {
+        max-width: 650px;
+    }
 }
